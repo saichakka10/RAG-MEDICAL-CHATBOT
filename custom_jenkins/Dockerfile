@@ -17,7 +17,7 @@ RUN apt-get update && \
         > /etc/apt/sources.list.d/docker.list && \
     apt-get update && \
     apt-get install -y --no-install-recommends docker-ce-cli && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/*d
 
 # Add Jenkins user to the Docker group (create if it doesn't exist)
 RUN groupadd -f docker && \
